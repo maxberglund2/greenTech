@@ -75,7 +75,14 @@ input[type=text] {
 }
 
 input[type=submit] {
-    background-color: lime;
+    background-color: black;
+    border: 2px lime solid;
+    color: lime;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     border-radius: 4px;
 }
 
