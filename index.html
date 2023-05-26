@@ -7,15 +7,43 @@
     <title>Green Tech</title>
     <link rel="stylesheet" href="css/resetcss.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
 </head>
-<header>
-    <img src="https://cdn-icons-png.flaticon.com/512/5673/5673462.png" alt="A solar panel">
-    <h1></h1>
-</header>
 <body>
-    <p>hello world</p>
-</body>
-<footer>
+    <header>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/5673/5673462.png" alt="A solar panel" width="150px">
+            <h1 class="logoText">Green Tech</h1>
+        </div>
+    </header>
 
-</footer>
+    <article>
+        <div class="block1">
+            <p style="margin-bottom: 20px;">Solar panels offer a solution to the challenges faced by economically disadvantaged and geographically remote areas where the installation of conventional panels is difficult or impractical.</p>
+            <img src="https://static.dw.com/image/58854115_905.jpg" alt="People installing solar panels" width="400" style="border: 1px solid white; border-radius: 10px">
+        </div>
+        
+        <div class="block2">
+            <h1 class="titleCalculator">Calculator</h1>
+
+                <form action="" autocomplete="off" onsubmit="return convert()">
+                    <input type="text" id="temp" placeholder="Temperature (°C)">
+                    <input type="text" id="time" placeholder="Time (hr)">
+                    <input class="btn" type="submit" value="Convert">
+                    <input type="text" name="power" id="power" placeholder="Power (kWh)">
+                </form>
+                <section class="result" id="resultPage">
+                <hr>
+                    <div class="code">
+                        <p id="margin">Cost = Temperature (°C) x 1.16194 / 1000 x Time (hr) x 3.760 per kWh in Sweden </p>
+                        <p class="hide1" id="hide1">The money you save with solar panel.</p>
+                        <p class="hide2" id="result">price</p>
+                    </div>
+                </section>
+        </div>
+    </article>
+    <footer>
+        <p>@ 2023 Green Tech. All rights reserved.</p>
+    </footer>
+    </body>
 </html>

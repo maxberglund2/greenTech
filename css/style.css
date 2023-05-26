@@ -1,3 +1,100 @@
-body{
-    background-color: lightgreen;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body, header, footer{
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
 }
+header, header div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    padding: 20px;
+    background-image: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?cs=srgb&dl=pexels-no-name-66997.jpg&fm=jpg');
+    background-size:cover;
+}
+.logoText{
+    margin-top: 20px;
+    font-size: 60px;
+    color: lime;
+    text-shadow: 2px 2px black;
+    border: 2px solid lime;
+    padding:10px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+body div{
+    color: lime;
+}
+article {
+    display: flex;
+}
+.block1 {
+    width: 50%;
+    background: rgb(0,62,77);
+    border: 2px solid white ;
+    border-right: none;
+    border-left: none;
+    padding: 70px;
+    word-wrap: break-word;
+    font-size: 20px;
+    color: white;
+}
+.block2 {
+    width: 50%;
+    background: rgb(0,62,77);
+    border: 2px solid white ;
+    padding: 70px;
+    border-right: none;
+    text-align: center;
+}
+
+.code{
+    background-color: black;
+    padding: 20px;
+    text-align: justify;
+}
+.code p {
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, .titleCalculator {
+    margin-bottom: 10px;
+}
+input{
+    padding: 10px;
+}
+input[type=text] {
+    border: 2px solid limegreen;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: lime;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.hide1, .hide2 {
+    display: none;
+}
+footer {
+    clear: both;
+
+    color: white;
+    background-color: black;
+    border-top: solid 1px white;
+    text-align: center;
+    padding: 50px;
+    align-items: end;
+    background-image: url('https://www.pngmart.com/files/21/Lawn-PNG-Pic.png');
+}
+
